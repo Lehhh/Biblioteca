@@ -1,0 +1,40 @@
+create table historico_livros ( Id_a int(3) not null, nome varchar(30) not null,id_l int(3) not null, livro varchar(30) not null, data_retirada varchar(10) not null, data_entrega Varchar(10) not null);
+stmt = con.prepareStatement("Insert into historico_Livros (id_a, nome, id_l, livro, data_retirada, data_entrega) values(?,?,?,?,?,?);");
+stmt.setInt (1,a.get_Id_a());
+stmt.setString(2, a.get_nome());
+stmt.setInt (3, get.id_l());
+stmt.setString(4, a.getTitulo());
+stmt.setString(5, a.getDataR());
+stmt.setString(6, a.getDataE());
+
+
+
+
+stmt.executeUpdate();
+JOptionPane.showMessageDialog(null,"Salvo com Sucesso");
+
+private void btnCAActionPerformed(java.awt.event.ActionEvent evt) {
+
+Aluno a = new Aluno();
+AlunoDAO dao = new AlunoDAO();
+
+a.setNome(CampoNome.getText());
+a.setSexo(CampoSexo.getText());
+a.setRa(CampoRA.getText());
+a.setSerie(Integer.parseInt(CampoSerie.getText()));
+a.setTurma(CampoTurma.getText());
+a.setRg(CampoRG.getText());
+a.setNasc(CampoNasc.getText());
+a.setEndereco(CampoEnd.getText());
+a.setTel(CampoTel.getText());
+
+
+
+
+http://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html
+
+stmt = con.prepareStatement("delete from aluno where nome=?  );
+stmt.setString(1, a.get_nome());
+
+
+            

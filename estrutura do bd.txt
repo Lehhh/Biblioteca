@@ -1,0 +1,34 @@
+create table Aluno(
+id_a int (12) UNSIGNED auto_increment NOT NULL,
+nome varchar(30)not null,
+sexo char(1)
+ra int(12) UNSIGNED NOT NULL,
+serie int(2) UNSIGNED NOT NULL,
+turma varchar(2) not null,
+rg int(12) UNSIGNED NOT NULL,
+nasc date not null,
+end varchar(40) not null,
+tel int(9) UNSIGNED NOT NULL,
+PRIMARY KEY(id_a));
+
+
+
+create table func(
+id_f int(12) unsigned auto_increment not null,
+nome varchar(30)not null,
+rg int(12) UNSIGNED NOT NULL,
+nasc date not null,
+end varchar(40) not null,
+tel int(9) UNSIGNED NOT NULL,
+login varchar(7) not null,
+senha varchar(5) not null,
+primary key (id_f));
+
+
+create table livro(
+id_l int(12) unsigned auto_increment not null,
+titulo varchar(20) not null,
+autor varchar(40) not null,
+genero varchar(20) not null,
+primary key (id_l));
+Insert Into aluno (nome,sexo,ra, serie, turma, rg, nasc, End, tel) VALUES(Leandro,M,48722886,1,A,48722886,11/06/1992,Barra da Areia 35,11984928582);
